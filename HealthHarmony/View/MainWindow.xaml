@@ -118,31 +118,32 @@
             Converter={StaticResource BoolToVisible}}" Width="240">
             <Grid.RowDefinitions>
                 <RowDefinition Height="4*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
+                <RowDefinition Height="12*"/>
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
             <Label Content="{Binding Path=CurrentSidebarTaskName}" 
                    Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
-            <StackPanel Grid.Row="1" Style="{StaticResource Field_StackPanel}">
-                <Label Content="Name:"/>
-                <TextBox Text="{Binding Path=NameSidebar}" Style="{StaticResource Field_TextBox}"/>
+            <StackPanel Grid.Row="1">
+                
+                <StackPanel  Style="{StaticResource Field_StackPanel}">
+                    <Label Content="Name:"/>
+                    <TextBox Text="{Binding Path=NameSidebar}" Style="{StaticResource Field_TextBox}"/>
+                </StackPanel>
+                <StackPanel  Style="{StaticResource Field_StackPanel}">
+                    <Label Content="Surname:"/>
+                    <TextBox Text="{Binding Path=SernameSidebar}" Style="{StaticResource Field_TextBox}"/>
+                </StackPanel>
+                <StackPanel  Style="{StaticResource Field_StackPanel}">
+                    <Label Content="Email:"/>
+                    <TextBox Text="{Binding Path=EmailSidebar}" Style="{StaticResource Field_TextBox}"/>
+                </StackPanel>
+                <StackPanel  Style="{StaticResource Field_StackPanel}">
+                    <Label Content="Phone:"/>
+                    <TextBox Text="{Binding Path=PhoneSidebar}" Style="{StaticResource Field_TextBox}"/>
+                </StackPanel>
+
             </StackPanel>
-            <StackPanel Grid.Row="2" Style="{StaticResource Field_StackPanel}">
-                <Label Content="Surname:"/>
-                <TextBox Text="{Binding Path=SernameSidebar}" Style="{StaticResource Field_TextBox}"/>
-            </StackPanel>
-            <StackPanel Grid.Row="3" Style="{StaticResource Field_StackPanel}">
-                <Label Content="Email:"/>
-                <TextBox Text="{Binding Path=EmailSidebar}" Style="{StaticResource Field_TextBox}"/>
-            </StackPanel>
-            <StackPanel Grid.Row="4" Style="{StaticResource Field_StackPanel}">
-                <Label Content="Phone:"/>
-                <TextBox Text="{Binding Path=PhoneSidebar}" Style="{StaticResource Field_TextBox}"/>
-            </StackPanel>
-            <Grid Grid.Row="5">
+            <Grid Grid.Row="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
